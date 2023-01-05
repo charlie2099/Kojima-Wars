@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6023d09833e1b40a9c00656b103241, type: 3}
+  m_Name: Shotgun
+  m_EditorClassIdentifier: 
+  weaponName: Shotgun
+  weaponDescription: Pump action. Strong at close range.
+  damageFalloff:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 15
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1000
+      value: 0
+      inSlope: -0.015
+      outSlope: -0.02
+      tangentMode: 5
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  fireRate: 1.5
+  magazineSize: 6
+  reloadType: 1
+  reloadTime: 0.5
+  automaticallyReload: 0
+  canADS: 0
+  ADSTime: 0.4
+  ADSZoom: 20
+  hipfireSpread: 5
+  ADSSpread: 4
+  hipfireRecoil: {x: -2.5, y: 5, z: 0.15}
+  ADSRecoil: {x: 0.6, y: 0.5, z: 0.1}
+  recoilSnappiness: 100
+  recoilRecoveryCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.2
+      value: 10
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  fpsWeaponModel: {fileID: 232846158753500423, guid: af091b7a58890f1429890d554ff3a511, type: 3}
+  tpsWeaponModel: {fileID: 232846158753500423, guid: ad2ea2052fdce964bba82308bfd0ea1a, type: 3}
+  weaponAnimation: {fileID: 7400000, guid: 8306ff4d43300db4ba3a87c7a439e828, type: 2}
+  icon: {fileID: 21300000, guid: 9bd0c43edff003743a7b79e592b59d48, type: 3}
+  shootSound: event:/Gunshots/Shotgun
+  reloadSound: event:/Reloads/Soft
+  automatic: 0
+  firingMode: 2
+  bulletsPerBurst: 3
+  timeBetweenBursts: 1
+  numberOfPellets: 10
+  projectile: {fileID: 0}

@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MechAnimator_Override
+  m_Controller: {fileID: 9100000, guid: c52c42b5d19a94a44a3643353a78f6b7, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 3692138e57d2d314e9221d4c445b746f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d01ffe62cdd4b7a479d30015f2a15886, type: 2}
